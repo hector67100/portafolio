@@ -1,0 +1,40 @@
+.container
+{
+  background-color:#fff ;
+}
+
+body
+{
+  background-color:#252321;
+  scrollbar-color: unset  #252321;
+    scrollbar-width: thin;
+}
+
+  body::-webkit-scrollbar
+  {
+    border-radius: 10px;
+    width:8px;
+  }
+
+  body::-webkit-scrollbar-track
+  {
+    background: unset;
+    border-radiu: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb
+  {
+    background: #252321;
+    border-radius: 10px;
+
+  }
+
+.bordes
+{
+  border: 5px solid #252321;
+}
+
+.row
+{
+  border-radius: 15px;
+}
