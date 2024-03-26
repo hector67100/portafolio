@@ -14,6 +14,7 @@ const BModal = ({modal}) =>
                         <h2>{modal[1]}</h2>
                             <div className="content">
                                 <p>Mostrar Imagen</p>
+                                <img src={modal[3]}/>
                                 <p>{modal[2]}</p>
                             </div>
                     </a>
