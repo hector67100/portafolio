@@ -4,28 +4,20 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Routes
   } from "react-router-dom";
 
 const Navigations = React.FC = () =>
 {
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
-        </nav>
+  return(
+      <Router>
+        <Routes>
+          <Route path="/" element={<Principal />} />
+        </Routes>
+      </Router>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-          <Route path="/">
-            <Principal />
-          </Route>
-      </div>
-    </Router>
+    );
 }
 
 export default Navigations;

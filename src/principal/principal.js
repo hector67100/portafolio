@@ -3,10 +3,18 @@ import React from "react";
 import Modales from "./Modales";
 
 const Principal = React.FC = () =>
-{   var modal =[["Randalls","images/Randalls.png"],["Quantum","images/quantum.png"],["Brennan","images/Brennan.png"],["Los Angeles Defense Attorney","images/LosAngeles.png"],["Insurance Denial Attorney","images/StopDenial.png"],["NJSMG","images/NJSMG.png"]];    
+{   var modal =[
+    ["Randalls","2022","React","images/Randalls.png"],
+    ["Quantum","2021","Vue/Sass/Laravel","images/quantum.png"],
+    ["Brennan","2021","Joomla/Sass","images/Brennan.png"],
+    ["Los Angeles Defense Attorney","2021","Joomla/Sass","images/LosAngeles.png"],
+    ["Insurance Denial Attorney","2021","Joomla/Sass","images/StopDenial.png"],
+    ["NJSMG","2021","Joomla/Sass","images/NJSMG.png"]
+    ];    
     return (
         <Container maxWidth="xl">
-            <Modales modal={modal}/>
+            <h3 className="text-center">Sitios en los que he trabajado</h3>
+            <Modales modales={modal}/>
         </Container>
     );
 }

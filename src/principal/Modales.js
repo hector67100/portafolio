@@ -1,22 +1,22 @@
 import React from "react";
+import BModal from "./Modal";
 
-const Modales = React.FC = ({modal}) =>
+const Modales = React.FC = ({modales}) =>
 {
     return (
-        <section class="tiles">
+        <section className="tiles">
             {
-            modal.map((item, index) => {
-            <article class={"style"+index}>
-                <span class="image">
-                    <img src={"images/pic0"+index+".jpg"} alt="" />
-                </span>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h2>Randalls</h2>
-                    <div class="content">
-                        <p>Mostrar Imagen</p>
-                    </div>
-                </a>
-            </article>
+
+            modales.map((item, index) => {
+            let number = +Number(index)+Number(1);
+            return(
+                <article className={"style"+index} key={item[0]}>
+                    <span className="image">
+                        <img src={"images/pic0"+number+".jpg"} alt="" />
+                    </span>
+                    <BModal modal={item}/>
+                </article>
+            )
             }
             )}
 
