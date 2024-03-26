@@ -1,6 +1,5 @@
 import {useState} from "react";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import { RiCloseLine } from "react-icons/ri";
 
 const BModal = ({modal}) =>
 {
@@ -23,6 +22,9 @@ const BModal = ({modal}) =>
                     <>
                         <div className="darkBG" onClick={handleClose} />
                             <div className="centered">
+                            <button className="closeBtn" onClick={handleClose}>
+                                <RiCloseLine style={{ marginBottom: "-3px" }} />
+                            </button>
                                 <div className="modal">
                                     <img src={modal[3]}/>
                                 </div>
