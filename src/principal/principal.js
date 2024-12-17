@@ -24,12 +24,12 @@ const Principal = () =>
 
     const toCapitalize = (texto) =>
     { 
-        return texto.toLowerCase().replace(/^.|\s\S/g, function(a) { return a.toUpperCase(); });
+        return texto.toLowerCase().replace(/^.|\s\S/g, function(a) { return a.toLowerCase(); });
     }
 
     const buscarTecnologia = event => {
 
-       let busqueda = proyectos.filter((proyectos) => buscar(proyectos,toCapitalize(event.target.value)))
+       let busqueda = proyectos.filter((proyecto) => buscar(proyecto,toCapitalize(event.target.value)))
        if(busqueda)
        {
         setProyect(busqueda);
@@ -42,8 +42,10 @@ const Principal = () =>
 
     const buscar = (proyectos,val) =>
     {
-        if (proyectos[2].includes(val))
+
+        if (proyectos[2].toLowerCase().includes(val))
         {
+            console.log(proyectos[2]);
             return true;
         }
     } 
