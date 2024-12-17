@@ -167,6 +167,42 @@
   width: 80%;
 }
 
+.icon:hover svg g g
+{
+  fill:#f2849e;
+}
+
+.icon svg g g
+{
+  fill:#585858;
+  -moz-transition: fill 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: fillr 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: fill 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.icon svg
+{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.actionsContainer
+{
+  display: flex;
+}
+
+.icon .style2
+{
+  position: relative;
+}
+
+.icons
+{
+  display: flex;
+}
+
 @media screen and (max-width: 1199px) {
   .modal img {
     width: 100%;

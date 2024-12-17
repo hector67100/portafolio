@@ -1,5 +1,5 @@
 import React from "react";
-import Principal from "../principal/Principal";
+import Principal from "../principal/principal";
 import {
     BrowserRouter as Router,
     Switch,
